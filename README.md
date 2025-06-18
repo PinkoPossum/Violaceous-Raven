@@ -1,6 +1,31 @@
 ### A Brief Overview
  SlopBot9001 is a python script that will pull content from reddit following guidelines in the code that can be adjusted. It will then output a .csv file with what it pulled and information about the post. After this, it will narrate the post using Google's TTS. Finally, pulling video files from a specified folder it will overlay the audio on top of subway surfer or minecraft parkour footage and cut it up to 30 sec increments. I never got around to testing automated uploads. 
 
+### Turnkey Deployment
+ You should be able to deploy the venv for this project on windows using the setup powershell script. To do so create a file directory that copies this structure:
+
+>Violaceous-Raven/
+
+>├─ narrations/
+
+>│  ├─ narrations of scraped posts
+
+>├─ raw_video/
+
+>│  ├─ background video files
+
+>├─ videos/
+
+>│  ├─ finished video files
+
+>├─ slopbotGTTS.py
+
+>├─ requirements.txt
+
+>├─ venv-setup.ps1
+
+
+
 ### Unrealized Features and Reflections
  Although originally I wanted to use Eleven labs for their more natural voices, I was limited by how much I was willing to spend on an exploratory project. 
 
